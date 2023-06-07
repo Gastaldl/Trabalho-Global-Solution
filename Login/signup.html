@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupstyle.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="logo"><h1>Save<span style="color: red;">Food</span></h1></div>
+    <div class="signup">
+        <form class="form">
+            <div class="header">Login</div>
+            <div class="inputs">
+                <input id="nome" placeholder="Nome" class="input" type="text">
+                <input id="senha" placeholder="Senha" class="input" type="password">
+            <div class="checkbox-container">
+                <label class="checkbox">
+                <input type="checkbox" id="checkbox">
+                </label>
+                <label for="checkbox" class="checkbox-text">Lembre de mim</label>
+            </div>
+            <button class="sigin-btn"  onclick="validateLogin()">Enviar</button>
+            <a class="forget" href="#">Esqueceu a senha?</a>
+            <p class="signup-link">Não tem uma conta? <a href="#">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="signupscript.js"></script>
+</body>
+</html>

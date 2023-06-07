@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveFood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li class="nav-img1">
+        <h1>Save<span style="color: red;">Food</span></h1>
+      </li>
+      <li class="nav-item"><a href="#section-1">Início</a></li>
+      <li class="nav-item"><a href="#section-2">Destaque</a></li>
+      <li class="nav-item"><a href="#section-3">Descontos Próximos</a></li>
+      <li class="nav-item"><a href="#section-4">Avaliações</a></li>
+      <li class="nav-item"><a href="#section-5">Sobre Nós</a></li>
+      <li class="nav-item"><a href="#section-6">Contato</a></li>
+      <li class="nav-item"><a onclick="mudarCorFundo()" >Mudar Cor</a></li>
+      <li class="nav-img2"><a href="/Login/signup.html"><img src=".//Images/icon-usuario.png" alt="Conta"></a></li>
+    </ul>
+  </nav>
+
+  <hr class="my-1">
+
+  <section id="section-1">
+    
+    <div class="container-sec1">
+      <div class="content-sec1">
+        <h1>Descubra os melhores descontos nos mercados próximos!</h1>
+        <p>Encontre descontos imperdíveis em alimentos frescos e produtos essenciais. Economize enquanto desfruta de uma alimentação saudável e acessível. Aproveite as melhores ofertas perto de você!</p>
+        <p>Navegue em nosso site, encontre os mercados mais próximos e descubra as promoções que se encaixam no seu orçamento. Compre com confiança, sabendo que está economizando em cada compra!</p>
+      </div>
+    </div>
+    <div class="img-container-sec1">
+      <img class="img-sec1" src="Images/img-sec1.jpg" alt="Pessoa Feliz">
+    </div>
+
+  </section>
+
+  <section class="section-1-2">
+
+    <div class="container-sec1-2">
+      <div class="content-sec1-2">
+        <h1>Como funciona?</h1>
+        <img class="img-sec1-2" src="Images/duvida.jpg" alt="Duvida">
+      </div>
+    </div>
+
+    <div class="img-container-sec1-2">
+      <div class="lista-sec1-2">
+        <h3 style="color: #eb1818">Busque por ofertas</h3>
+        <p>Pesquise por alimentos e produtos específicos e encontre as melhores ofertas disponíveis nos mercados próximos.</p>
+        <span class="icon-lista"></span>
+        <br><br>
+        <h3 style="color: #eb1818">Compare preços e descontos</h3>
+        <p>Analise os preços originais e os descontos oferecidos para tomar decisões informadas e aproveitar as melhores promoções.</p>
+        <span class="icon-lista-2"></span>
+        <br><br>
+        <h3 style="color: #eb1818">Localize os mercados próximos</h3>
+        <p>Utilize a função de localização para encontrar os mercados mais próximos da sua região e descubra as ofertas disponíveis em cada um deles.</p>
+        <span class="icon-lista-3"></span>
+        <br><br>
+        <h3 style="color: #eb1818">Economize e desfrute</h3>
+        <p>Faça suas compras com confiança, economizando dinheiro em alimentos frescos e essenciais, e desfrute de uma alimentação saudável e acessível com as ofertas encontradas no site.</p>
+        <span class="icon-lista-4"></span>
+      </div>
+    </div>
+
+  </section>
+
+  <hr class="my-2">
+
+  <section id="section-2">
+
+  <div class="container-sec2">
+  <h1>Descontos em Destaque</h1>
+  <p>Economize ainda mais com nossos descontos em destaque, selecionados especialmente para você aproveitar as melhores ofertas!</p>
+  </div>
+
+  <div class="container2-sec2">
+    <div class="item-destaque">
+      <img src="Images/morango.jpg" alt="Morango">
+      <h3>Cacho de morango</h3>
+      <p class="original-price">R$ 8,90</p>
+      <p class="discount-price">R$ 4,59</p>
+    </div>
+    <div class="item-destaque">
+      <img src="Images/salmao.jpg" alt="Salmao">
+      <h3>Filé de salmão</h3>
+      <p class="original-price">R$ 22,90</p>
+      <p class="discount-price">R$ 18,32</p>
+    </div>
+    <div class="item-destaque">
+      <img src="Images/abacate.jpg" alt="Abacate">
+      <h3>Abacate maduro</h3>
+      <p class="original-price">R$ 4,50</p>
+      <p class="discount-price">R$ 2,05</p>
+    </div>
+    <div class="item-destaque">
+      <img src="Images/cereal.jpg" alt="Cereal">
+      <h3>Caixa de cereal</h3>
+      <p class="original-price">R$ 12,90</p>
+      <p class="discount-price">R$ 9,00</p>
+    </div>
+  </div>
+
+  </section>
+
+  <hr class="my-3">
+
+  <section id="section-3">
+
+    <div class="container-sec3">
+      <h1>Descontos Próximos</h1>
+      <p>Confira os descontos imperdíveis nos alimentos próximos da data de validade e aproveite para economizar!</p>
+    </div>
+
+    <div class="product-section">
+      <div class="filter-section">
+        <label for="market-filter">Mercado:</label>
+        <select id="market-filter">
+          <option value="todos">Todos</option>
+          <option value="mercado1">Mercado 1</option>
+          <option value="mercado2">Mercado 2</option>
+          <option value="mercado3">Mercado 3</option>
+        </select>
+    
+        <label for="food-type-filter">Tipo de Alimento:</label>
+        <select id="food-type-filter">
+          <option value="todos">Todos</option>
+          <option value="alimento1">Alimento 1</option>
+          <option value="alimento2">Alimento 2</option>
+          <option value="alimento3">Alimento 3</option>
+        </select>
+      </div>
+
+        <div class="product-section">
+          <ul class="product-list">
+            <li class="product-card" data-market="mercado1" data-food-type="alimento1">
+              <img src="Images/morango.jpg" alt="Morango">
+              <h3>Cacho de morango</h3>
+              <p class="original-price2">R$ 8,90</p>
+              <p class="discount-price2">R$ 4,59</p>
+              <p>Data de validade: 15/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado2" data-food-type="alimento1">
+              <img src="Images/uva.jpg" alt="Uva">
+              <h3>Cacho de uva</h3>
+              <p class="original-price2">R$ 10,90</p>
+              <p class="discount-price2">R$ 7,72</p>
+              <p>Data de validade: 10/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado3" data-food-type="alimento2">
+              <img src="Images/iogurte.jpg" alt="Iogurte">
+              <h3>Pote de iogurte natural </h3>
+              <p class="original-price2">R$ 3,50</p>
+              <p class="discount-price2">R$ 2,20</p>
+              <p>Data de validade: 12/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado1" data-food-type="alimento3">
+              <img src="Images/macarrao.jpg" alt="Macarrao">
+              <h3>Pacote de macarrão integral</h3>
+              <p class="original-price2"> R$ 4,90</p>
+              <p class="discount-price2"> R$ 2,40</p>
+              <p>Data de validade: 15/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado2" data-food-type="alimento2">
+              <img src="Images/cookies.jpg" alt="Cookie">
+              <h3>Pacote de cookies de chocolate </h3>
+              <p class="original-price2"> R$ 6,50</p>
+              <p class="discount-price2">R$ 4,55</p>
+              <p>Data de validade: 20/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado3" data-food-type="alimento3">
+              <img src="Images/filedepeito.jpg" alt="Frango">
+              <h3>Filé de peito</h3>
+              <p class="original-price2">R$ 14,89</p>
+              <p class="discount-price2">R$ 10,59</p>
+              <p>Data de validade: 25/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado1" data-food-type="alimento1">
+              <img src="Images/batatas.jpg" alt="Batata">
+              <h3>1kg de Batata conservada</h3>
+              <p class="original-price2">R$ 8,90</p>
+              <p class="discount-price2">R$ 6,89</p>
+              <p>Data de validade: 30/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado2" data-food-type="alimento1">
+              <img src="Images/cafe.jpg" alt="Cafe">
+              <h3>Produto 4</h3>
+              <p class="original-price2">R$ 18,49</p>
+              <p class="discount-price2">R$ 13,89</p>
+              <p>Data de validade: 02/07/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado3" data-food-type="alimento2">
+              <img src="Images/manteiga.jpg" alt="Manteiga">
+              <h3>Produto 4</h3>
+              <p class="original-price2">R$ 10,50</p>
+              <p class="discount-price2">R$ 7,95</p>
+              <p>Data de validade: 20/06/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado1" data-food-type="alimento3">
+              <img src="Images/cereal.jpg" alt="Cereal">
+              <h3>Produto 4</h3>
+              <p class="original-price2">R$ 12,90</p>
+              <p class="discount-price2">R$ 9,00</p>
+              <p>Data de validade: 15/07/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado2" data-food-type="alimento1">
+              <img src="Images/abacate.jpg" alt="Abacate">
+              <h3>Produto 4</h3>
+              <p class="original-price2">R$ 4,50</p>
+              <p class="discount-price2">R$ 2,05</p>
+              <p>Data de validade: 10/07/2023</p>
+            </li>
+            <li class="product-card" data-market="mercado3" data-food-type="alimento2">
+              <img src="Images/salmao.jpg" alt="Salmao">
+              <h3>Produto 4</h3>
+              <p class="original-price2">R$ 22,90</p>
+              <p class="discount-price2">R$ 18,32</p>
+              <p>Data de validade: 20/07/2023</p>
+            </li>
+          </ul>
+        </div>
+
+  </section>
+
+  <hr class="my-3">
+
+  <section id="section-4">
+    <div class="container-sec4">
+      <h1>Avaliações dos Usuários</h1>
+      <p>Economize ainda mais com nossos descontos em destaque, selecionados especialmente para você aproveitar as melhores ofertas!</p>
+    </div>
+
+    <div class="testimonials-section">
+      <div class="testimonial-list">
+        <div class="testimonial-card">
+          <img src="images/user1.jpg" alt="Avatar do user 1">
+          <h3>João Silva</h3>
+          <p>"O site é incrível! Encontrei os melhores produtos com preços acessíveis. Recomendo a todos."</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="Images/user2.jpg" alt="Avatar do user 2">
+          <h3>Maria Santos</h3>
+          <p>"Ótima plataforma! Me ajudou a economizar e a fazer escolhas alimentares mais saudáveis."</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="Images/user5.jpg" alt="Avatar do user 3">
+          <h3>Ana Rodrigues</h3>
+          <p>"Estou impressionada com a variedade de produtos disponíveis no site. Encontrei opções saudáveis para toda a minha família."</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="Images/user3.jpg" alt="Avatar do user 4">
+          <h3>Carlos Lima</h3>
+          <p>"O site é muito fácil de usar e os descontos são ótimos. Nunca mais vou perder tempo procurando promoções nos mercados."</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="Images/user4.jpg" alt="Avatar do user 5">
+          <h3>Patrícia Gomes</h3>
+          <p>"Recomendo a plataforma para todos os meus amigos. É uma maneira inteligente de economizar dinheiro e cuidar da saúde."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-3">
+
+  <section id="section-5">
+
+    <div class="container-sec5">
+      <div><h1>Sobre Nós</h1></div>
+      <div><p>Conheça nossa história e missão de proporcionar acesso a alimentos de qualidade a preços acessíveis, tornando a alimentação saudável uma realidade para todos.</p></div>
+    </div>
+
+    <div class="container2-sec5">
+      <div class="container2-sec5-h1"><h1>Nossa paixão por alimentação saudável e economia ao seu alcance!</h1></div>
+      <div class="container2-sec5-p"><p>Somos uma equipe dedicada que acredita que todos devem ter acesso a alimentos de qualidade a preços acessíveis. Nosso objetivo é tornar a alimentação saudável uma realidade para todos, proporcionando uma plataforma que reúne as melhores ofertas nos mercados próximos. Trabalhamos para facilitar a vida dos usuários, ajudando-os a economizar e fazer escolhas alimentares conscientes.
+        <br><br>Nosso compromisso vai além de oferecer descontos. Queremos impactar positivamente a vida das pessoas, promovendo uma alimentação saudável e contribuindo para o combate à fome. Buscamos parcerias com mercados locais e marcas engajadas nessa causa. Junte-se a nós nessa jornada e faça parte da comunidade que está transformando a maneira como nos alimentamos.
+      </p></div>
+    </div>
+
+    <div class="container-sec5-img">
+      <div class="children-sec5-img">
+        <img src="Images/sobre1.jpg" alt="Imagem Sobre">
+      </div>
+      <div class="children-sec5-img">
+        <img src="Images/sobre2.jpg" alt="Imagem Sobre">
+      </div>
+      <div class="children-sec5-img">
+        <img src="Images/sobre3.jpg" alt="Imagem Sobre">
+      </div>
+    </div>
+
+  </section>
+
+  <hr class="my-3">
+
+  <section id="section-6">
+
+    <div class="h1-sec6">
+    <h1>Entre em Contato</h1>
+    <p>Estamos aqui para ajudar e proporcionar a melhor experiência possível para você!</p>
+    </div>
+
+    <div class="testbox">
+      <form action="/" id="registrationForm" onsubmit="return validarFormulario()">
+        <div class="item">
+          <p>Nome</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="Primeiro Nome" id="nome" required/>
+            <input type="text" name="name" placeholder="Sobrenome" id="nome" required/>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="item">
+            <p>Email</p>
+            <input type="email" id="email" required/>
+          </div>
+          <div class="item">
+            <p>Telefone</p>
+            <input type="tel" name="name"/>
+          </div>
+        </div>
+        <div class="item">
+          <p>Comentário</p>
+          <input class="input-comentario" type="text" name="name"/>
+        </div>
+        <div class="botao">
+          <button type="submit" href="/" id="email" required>
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Enviar</span>
+          </button>
+        </div>
+      </form>
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-col-h1">
+          <h1>Save<span style="color: white;">Food</span>
+        </div>
+        <div class="footer-col">
+          <h4>Siga a gente!</h4>
+          <div class="social-links">
+            <a href=""><i class="fa-facebook-f"><img src="Images/facebook.png" alt="Facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"><img src="Images/twitter.png" alt="Twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"><img src="Images/instagram.png" alt="Istagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"><img src="Images/linkedin.png" alt="Linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">&copy;<span id="year"> </span><span> SaveFood. All rights reserved.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
